@@ -14,5 +14,9 @@ namespace User.Controllers{
         public dynamic getById(string id){
             return id;
         }
+        [HttpPost("login")]
+        public dynamic login(UserClass data){
+            return data.Id;
+        }
     }
 }
