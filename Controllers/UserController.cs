@@ -16,7 +16,8 @@ namespace User.Controllers{
         }
         [HttpPost("login")]
         public dynamic login(UserClass data){
-            return data.Id;
+            // var requestBody = await Request.Body.ReadAsStringAsync();
+            return data.Name;
         }
     }
 }
